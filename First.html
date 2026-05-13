@@ -6,11 +6,10 @@
      <title>formulário</title>
 </head>
 <body>
-
-     <h1>Cadastro</h1>
-
      <form id="formulário" method="POST">
 
+     <h1>Cadastro</h1>
+     
         <label>Usuário</label>
         <input type="text" name="usuário" id="usuário"><br><br>
 
@@ -38,3 +37,61 @@
         height: 100vh;
     }
 
+
+body{
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align: center;
+    color: #1e3c72;
+}
+
+label{
+    font-weight: bold;
+    color: #333;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #2a5298;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1e3c72;
+}
+
+</style>
